@@ -13,3 +13,6 @@ HotelService (Interface): Defines the common interface for all hotel services.
 **FrontDesk:** The facade class that coordinates interactions between the client (HotelApp) and the individual hotel services.
 
 **HotelApp:** The client class that uses the FrontDesk facade to access and utilize hotel services seamlessly.
+
+### UML Class Diagram
+![Facade Pattern - UML Class Diagram](src/FP_UML.png)
