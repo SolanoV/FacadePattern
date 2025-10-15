@@ -16,13 +16,16 @@ public class Frontdesk {
         this.valet = valet;
     }
     public void requestValet(String plateNuber){
-        valet.executeService(plateNuber);
+        valet.executeService();
+        valet.pickUpVehicle(plateNuber);
     }
 
     public void requestHouseKeeping(String roomNumber){
-        houseKeeping.executeService(roomNumber);
+        houseKeeping.executeService();
+        houseKeeping.cleanRoom(roomNumber);
     }
     public void requestCart(int numberOfCarts){
-        cart.executeService(String.valueOf(numberOfCarts));
+        cart.executeService();
+        cart.requestCart(String.valueOf(numberOfCarts));
     }
 }

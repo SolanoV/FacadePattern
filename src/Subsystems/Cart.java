@@ -1,12 +1,12 @@
 package Subsystems;
 
 public class Cart implements HotelService {
-    private void requestCart(String numberOfCarts){
+    public void requestCart(String numberOfCarts){
         System.out.println("Cart Service: Delivering "+Integer.parseInt(numberOfCarts)+" carts.");
     }
 
     @Override
-    public void executeService(String numberOfCarts) {
-        requestCart(numberOfCarts);
+    public void executeService() {
+        System.out.println("Cart Service: Requesting Luggage Cart.");
     }
 }
